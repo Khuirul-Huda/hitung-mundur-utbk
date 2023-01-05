@@ -20,6 +20,10 @@ let getUTBKYear = () => {
     }
 
 }
+
+//set Title
+document.getElementById('utbkyear').innerHTML = getUTBKYear()
+
 const UTBKDate = new Date('8 May ' + getUTBKYear())
 setInterval(() => {
     let mstimeLeftUTBK = UTBKDate - new Date()
