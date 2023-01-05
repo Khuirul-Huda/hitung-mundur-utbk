@@ -16,11 +16,11 @@ let getUTBKYear = () => {
     if (new Date().getMonth() > 5) {
         return new Date().getFullYear() + 1
     } else {
-        return new Date().getFullYear
+        return new Date().getFullYear()
     }
 
 }
-const UTBKDate = new Date('1 May ' + getUTBKYear())
+const UTBKDate = new Date('8 May ' + getUTBKYear())
 setInterval(() => {
     let mstimeLeftUTBK = UTBKDate - new Date()
     let timeLeftUTBK = mstimeLeftUTBK / 1000
